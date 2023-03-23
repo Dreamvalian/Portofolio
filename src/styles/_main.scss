@@ -1,0 +1,72 @@
+@import "./variable";
+
+body {
+  margin: 0;
+  // font-family: 'Hind Vadodara', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: 'Sofia Sans', sans-serif;
+  font: 100% $font-stack;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+li {
+
+  list-style: none;
+  text-decoration: none;
+
+}
+
+// a {
+//   text-decoration: none !important;
+// }
+
+figure {
+
+  margin: 0;
+}
+
+// Font Size
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 1rem;
+}

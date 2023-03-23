@@ -1,4 +1,215 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  font: 100% "Space Grotesk", sans-serif;
+  background-color: #F5F5F5;
+  color: #2F2F2F;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font: 100% "Space Grotesk", sans-serif;
+  background-color: #F5F5F5;
+  color: #2F2F2F;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #2F2F2F;
+  height: 72px;
+  padding: 0 24px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 2vh;
+}
+nav ul li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #2F2F2F;
+}
+nav .site-title {
+  font-weight: 600;
+}
+nav a.nav-item {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #2F2F2F;
+  transition: transform 0.2s ease;
+}
+nav a.nav-item:hover {
+  transform: translateY(-0.1px);
+}
+nav a.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2F2F2F;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease;
+}
+nav a.nav-item:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+nav .icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+
+body {
+  margin: 0;
+  font: 100% "Space Grotesk", sans-serif;
+  background-color: #F5F5F5;
+  color: #2F2F2F;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.hero #left-hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero #left-hero .cover-hero {
+  display: flex;
+}
+.hero .left-hero-cover,
+.hero .left-hero-cover-2 {
+  grid-column: unset;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero .left-hero-cover-2 {
+  filter: grayscale(100%);
+}
+.hero #page-break {
+  width: 1px;
+  height: 100%;
+  background-color: #2F2F2F;
+  margin: 0 20px;
+}
+.hero #right-hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero a,
+.hero a:hover {
+  text-decoration: underline;
+  color: #2F2F2F;
+  cursor: pointer;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +246,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} *//*# sourceMappingURL=App.css.map */
