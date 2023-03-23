@@ -1,7 +1,6 @@
 import React from "react";
-import { ReactComponent as InstagramIcon } from '../assets/icon/instagram.svg';
-import { ReactComponent as LinkedInIcon } from '../assets/icon/linkedin-02.svg';
-
+import { ReactComponent as InstagramIcon } from "../assets/icon/instagram.svg";
+import { ReactComponent as LinkedInIcon } from "../assets/icon/linkedin-02.svg";
 
 const Header = () => {
   return (
@@ -32,10 +31,13 @@ const Header = () => {
               about
             </a>
           </li>
-          < InstagramIcon viewBox="0 0 48 32" />
-          < LinkedInIcon viewBox="0 0 48 32" />
+          <a href="/#" className="nav-icon">
+            <InstagramIcon viewBox="0 -8 32 48" />
+          </a>
+          <a href="/#" className="nav-icon">
+            <LinkedInIcon viewBox="0 -8 32 48" />
+          </a>
         </ul>
-
       </div>
     </nav>
   );
