@@ -1,8 +1,15 @@
 import React from "react";
+// import { NavLink } from "react-router-dom";
 import { ReactComponent as InstagramIcon } from "../assets/icon/instagram.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icon/linkedin-02.svg";
 
 const Header = () => {
+  // const [activePage, setActivePage] = useState("");
+
+  // const handleNavLinkClick = (page) => {
+  //   setActivePage(page);
+  // };
+
   return (
     <nav>
       <a href="/#" className="site-title">
@@ -12,6 +19,14 @@ const Header = () => {
       <div className="nav-header">
         <ul>
           <li>
+            {/* <NavLink
+              exact
+              to="/"
+              activeClassName="active"
+              onClick={() => handleNavLinkClick("projects")}
+            >
+              projects
+            </NavLink> */}
             <a href="/#" className="nav-item">
               projects
             </a>
