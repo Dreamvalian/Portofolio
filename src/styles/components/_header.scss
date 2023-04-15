@@ -16,7 +16,7 @@ nav {
     box-sizing: border-box;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
     position: fixed;
-    z-index: 0;
+    z-index: 1000;
 
 
     ul {
@@ -56,42 +56,48 @@ nav {
         display: inline-block;
         padding: 10px;
         color: $black;
-        transition: transform 0.2s ease;
-    }
 
-    a.nav-item:active {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background-color: $black;
-        transform: scaleX(0);
-    }
-
-    a.nav-item:hover {
-        transform: translateY(-0.1px);
+        a.nav-item:active,
+        a.nav-item:focus {
+            color: $black;
+            transition: color 0.2s ease-out;
+        }
     }
 
     a.nav-item::before {
+
         content: '';
         position: absolute;
+        width: 100%;
+        height: 1.5px;
         bottom: 0;
         left: 0;
-        width: 100%;
-        height: 1px;
-        background-color: $black;
-        transform: scaleX(0);
         transform-origin: bottom left;
-        transition: transform 0.2s ease;
+        transition: transform 0.35s ease-out;
+
     }
 
-    a.nav-item:hover::before {
+    a.nav-item::after {
+
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: $black;
+        transform-origin: bottom left;
+        transition: transform 0.35s ease-out;
+
+    }
+
+    a.nav-item:hover::after {
+
         transform: scaleX(1);
-        transform-origin: bottom right;
-    }
+        transform-origin: bottom left;
 
+    }
 
     .icon {
         display: flex;

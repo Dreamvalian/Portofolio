@@ -16,10 +16,9 @@ const Header = () => {
         Hanif <br />
         Nugraha <br />
       </a>
-      <div className="nav-header">
-        <ul>
-          <li>
-            {/* <NavLink
+      <ul className="nav-header">
+        <li>
+          {/* <NavLink
               exact
               to="/"
               activeClassName="active"
@@ -27,33 +26,32 @@ const Header = () => {
             >
               projects
             </NavLink> */}
-            <a href="/#" className="nav-item">
-              projects
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="nav-item">
-              visuals
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="nav-item">
-              resume
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="nav-item">
-              about
-            </a>
-          </li>
-          <a href="/#" className="nav-icon">
-            <InstagramIcon viewBox="0 -8 32 48" />
+          <a href="/#" className="nav-item">
+            projects
           </a>
-          <a href="/#" className="nav-icon">
-            <LinkedInIcon viewBox="0 -8 32 48" />
+        </li>
+        <li>
+          <a href="/#" className="nav-item">
+            visuals
           </a>
-        </ul>
-      </div>
+        </li>
+        <li>
+          <a href="/#" className="nav-item">
+            resume
+          </a>
+        </li>
+        <li>
+          <a href="/#" className="nav-item">
+            about
+          </a>
+        </li>
+        <a href="/#" className="nav-icon">
+          <InstagramIcon viewBox="0 -8 32 48" />
+        </a>
+        <a href="/#" className="nav-icon">
+          <LinkedInIcon viewBox="0 -8 32 48" />
+        </a>
+      </ul>
     </nav>
   );
 };
