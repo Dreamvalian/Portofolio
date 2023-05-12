@@ -1,21 +1,19 @@
+// Import Dependencies
 import React from "react";
-import {
-    BrowserRouter,
-    Route,
-    Routes
-} from "react-router-dom";
-import Home from "./pages/home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// Import Pages
+import Home from "./pages/home/Index";
 
 const RoutesList = () => {
 
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/#" render={() => <Home />} />
-                {/* <Route path="/visuals" element={<Visual />} /> */}
+                <Route path="/" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )
 }
 
-export default RoutesList;
+export default RoutesList

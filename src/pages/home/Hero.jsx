@@ -1,5 +1,6 @@
 import $ from "jquery";
 import React from "react";
+// import ImageContent1 from "../../assets/image-content1.png";
 import MyImage from "../../assets/image1.jpeg";
 
 window.jQuery = $;
@@ -9,16 +10,8 @@ const Hero = () => {
     <section className="hero" id="hero">
       <div className="left-hero" id="left-hero">
         <div className="cover-hero" id="cover-hero">
-          <img
-            className="left-hero-cover"
-            src={MyImage}
-            alt="left hero cover"
-          />
-          <img
-            className="left-hero-cover-2"
-            src={MyImage}
-            alt="left hero cover"
-          />
+          <img className="left-hero-cover" src={MyImage} alt="Cover 1" />
+          <img className="left-hero-cover-2" src={MyImage} alt=" Cover 2" />
         </div>
         <h2>Greetings ! I'm Hanif</h2>
         <p>
