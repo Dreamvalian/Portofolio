@@ -1,0 +1,52 @@
+@import '../main';
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+
+  &.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.5s;
+  }
+
+  h1 {
+    color: $black;
+    animation: fade-in 1s ease-in-out;
+  }
+
+  p {
+    color: #ccc;
+    animation: slide-up 1s ease-in-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
