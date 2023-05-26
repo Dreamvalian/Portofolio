@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font: 100% "Space Grotesk", sans-serif;
-  background-color: #F5F5F5;
-  color: #2F2F2F;
+  background-color: #f5f5f5;
+  color: #2f2f2f;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,8 +15,8 @@ code {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -32,31 +32,11 @@ figure {
 body {
   margin: 0;
   font: 100% "Space Grotesk", sans-serif;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: #2F2F2F;
-  margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-figure {
-  margin: 0;
 }
 
 nav {
@@ -65,7 +45,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  color: #2F2F2F;
+  color: #2f2f2f;
   height: 72px;
   padding: 0 24px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
@@ -137,31 +117,6 @@ nav .icon {
   height: 16px;
 }
 
-body {
-  margin: 0;
-  font: 100% "Space Grotesk", sans-serif;
-  background-color: #F5F5F5;
-  color: #2F2F2F;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
 
 figure {
   margin: 0;
