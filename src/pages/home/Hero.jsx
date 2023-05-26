@@ -1,5 +1,6 @@
 import $ from "jquery";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as HomeIcon } from "../../assets/icon/home-06.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/icon/instagram.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/icon/linkedin-02.svg";
@@ -50,8 +51,8 @@ const Hero = ({ setIsVisible }) => {
           sense of my style. Enjoy!
         </p>
         <p>
-          Check out <a href="/#">about me</a> or see my <a href="/#">resume</a>{" "}
-          here.
+          Check out <Link to="#">about me</Link> or see my{" "}
+          <<Link to="#">resume</Link> here.
         </p>
       </div>
       <div className="right-hero" id="right-hero">
