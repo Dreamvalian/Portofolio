@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Montserrat:wght@400;500&family=Sofia+Sans&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
   font: 100% "Space Grotesk", sans-serif;
   background-color: #F5F5F5;
   color: #2F2F2F;
-  margin: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -45,7 +44,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -70,6 +71,7 @@ nav {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
   position: relative;
 }
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -79,11 +81,13 @@ nav ul {
   list-style: none;
   gap: 2vh;
 }
+
 nav ul li {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 0 10px;
 }
+
 nav a {
   text-decoration: none;
   position: relative;
@@ -91,9 +95,11 @@ nav a {
   padding: 10px;
   color: #2F2F2F;
 }
+
 nav .site-title {
   font-weight: 600;
 }
+
 nav a.nav-item {
   text-decoration: none;
   position: relative;
@@ -102,9 +108,11 @@ nav a.nav-item {
   color: #2F2F2F;
   transition: transform 0.2s ease;
 }
+
 nav a.nav-item:hover {
   transform: translateY(-0.1px);
 }
+
 nav a.nav-item::before {
   content: "";
   position: absolute;
@@ -117,10 +125,12 @@ nav a.nav-item::before {
   transform-origin: bottom left;
   transition: transform 0.2s ease;
 }
+
 nav a.nav-item:hover::before {
   transform: scaleX(1);
   transform-origin: bottom right;
 }
+
 nav .icon {
   display: flex;
   width: 16px;
@@ -142,7 +152,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -166,17 +178,21 @@ figure {
   padding-bottom: 5rem;
   gap: 2rem;
 }
+
 .hero h1 {
   font-size: 3rem;
   font-weight: 400;
 }
+
 .hero #left-hero {
   display: flex;
   flex-direction: column;
 }
+
 .hero #left-hero .cover-hero {
   display: flex;
 }
+
 .hero .left-hero-cover,
 .hero .left-hero-cover-2 {
   grid-column: unset;
@@ -189,19 +205,23 @@ figure {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .hero .left-hero-cover-2 {
   filter: grayscale(100%);
 }
+
 .hero #page-break {
   width: 1px;
   height: 100%;
   background-color: #2F2F2F;
   margin: 0 20px;
 }
+
 .hero #right-hero {
   display: flex;
   flex-direction: column;
 }
+
 .hero a,
 .hero a:hover {
   text-decoration: underline;
@@ -246,4 +266,5 @@ figure {
   to {
     transform: rotate(360deg);
   }
-} *//*# sourceMappingURL=App.css.map */
+} */
+/*# sourceMappingURL=App.css.map */
