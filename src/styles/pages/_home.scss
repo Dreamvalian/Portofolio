@@ -8,25 +8,24 @@
   height: 672px;
   margin: auto;
   gap: 2rem;
+  transition: height 0.5s ease-in-out;
 
   &.visible {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 2s ease-in-out;
   }
 
   &.hidden {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
   }
 
-  //* Left Hero
   .left-hero {
     display: grid;
     width: 50%;
-    height: 512px;
-
+    height: 528px;
     text-underline-offset: 4px;
 
     h1 {
@@ -42,9 +41,12 @@
       margin-top: 2rem;
       gap: 2rem;
       z-index: -1;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+
+      background: {
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+      }
     }
 
     .left-hero-cover-2 {
@@ -52,31 +54,12 @@
     }
   }
 
-
-
-  //* Right Hero
   .right-hero {
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center;
     padding: 5rem 0 0 5rem;
-    // height: 512px;
-
-
-    // .right-hero:before {
-    //   content: '';
-    //   border-left: 1px solid $black;
-    //   height: 80%;
-    // }
-
-    // .right-hero-cover {
-    //   grid-column: unset;
-    //   width: 512px;
-    //   height: auto;
-    //   border: 1px solid $black;
-    //   box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
-    // }
 
     a,
     a:hover {
@@ -121,5 +104,27 @@
         background-color: #0056b3;
       }
     }
+  }
+
+  .open {
+    height: 512px;
+  }
+
+  .toggle-button {
+    background-color: $white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .content {
+    height: 100%;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .right-hero-content {
+    background-color: $white;
+    padding: 10px;
   }
 }

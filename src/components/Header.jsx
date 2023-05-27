@@ -1,4 +1,5 @@
 import React from "react";
+import * as Icon from "react-feather";
 import { ReactComponent as InstagramIcon } from "../assets/icon/instagram.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icon/linkedin-02.svg";
 
@@ -45,10 +46,10 @@ const Header = () => {
           </a>
         </li>
         <a href="/#" className="nav-icon">
-          <InstagramIcon viewBox="0 -8 32 48" />
+          <Icon.Instagram strokeWidth={1} />
         </a>
         <a href="/#" className="nav-icon">
-          <LinkedInIcon viewBox="0 -8 32 48" />
+          <Icon.Linkedin strokeWidth={1} />
         </a>
       </ul>
     </nav>
