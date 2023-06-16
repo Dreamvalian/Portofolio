@@ -25,8 +25,12 @@
   .left-hero {
     display: grid;
     width: 50%;
-    height: 528px;
-    text-underline-offset: 4px;
+    height: 512px;
+    text-underline-offset: 0.25rem;
+
+    a {
+      color: $black;
+    }
 
     h1 {
       font-weight: 400;
@@ -56,7 +60,6 @@
 
   .right-hero {
     display: flex;
-    flex-direction: column;
     width: 50%;
     justify-content: center;
     padding: 5rem 0 0 5rem;
@@ -112,19 +115,20 @@
 
   .toggle-button {
     background-color: $white;
+    padding: 1rem;
     border: none;
-    padding: 10px;
     cursor: pointer;
   }
 
   .content {
     height: 100%;
-    padding: 10px;
+    padding: 1rem;
     transition: transform 0.5s ease-in-out;
+    overflow: hidden;
   }
 
   .right-hero-content {
     background-color: $white;
-    padding: 10px;
+    padding: 1rem;
   }
 }

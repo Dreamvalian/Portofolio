@@ -1,7 +1,5 @@
 import React from "react";
 import * as Icon from "react-feather";
-import { ReactComponent as InstagramIcon } from "../assets/icon/instagram.svg";
-import { ReactComponent as LinkedInIcon } from "../assets/icon/linkedin-02.svg";
 
 const Header = () => {
   // const [activePage, setActivePage] = useState("");
