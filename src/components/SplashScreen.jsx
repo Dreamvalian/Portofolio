@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Hero from "../pages/home/Hero";
-import "../styles/components/_splashscreen.scss";
+import React, { useEffect, useState } from 'react';
+import Hero from '../pages/home/Hero';
+import '../styles/components/_splashscreen.scss';
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -16,9 +16,9 @@ const SplashScreen = () => {
   return (
     <div>
       {isVisible ? (
-        <div className="splash-screen">
-          <h1>Welcome</h1>
-          <p>bla bla bla ...</p>
+        <div className='splash-screen'>
+          <h1>Memek</h1>
+          <p>basah basah basah</p>
         </div>
       ) : (
         <Hero setIsVisible={setIsVisible} />

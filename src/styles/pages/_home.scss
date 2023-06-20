@@ -61,8 +61,7 @@
   .right-hero {
     display: flex;
     width: 50%;
-    justify-content: center;
-    padding: 5rem 0 0 5rem;
+    padding-top: 5rem;
 
     a,
     a:hover {
@@ -106,6 +105,11 @@
       .submit-button:hover {
         background-color: #0056b3;
       }
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
     }
   }
 
