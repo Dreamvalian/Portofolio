@@ -3,6 +3,13 @@ import * as Icon from 'react-feather';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/pages/resume/Resume-Hanif-Nugraha.pdf';
+    link.download = 'Resume-Hanif-Nugraha.pdf';
+    link.click();
+  };
+
   return (
     <nav>
       <Link to='/' className='site-title'>
@@ -21,9 +28,9 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to='/resume' className='nav-item'>
+          <a href='/' onClick={handleDownload} className='nav-item'>
             resume
-          </Link>
+          </a>
         </li>
         <li>
           <Link to='/about' className='nav-item'>
