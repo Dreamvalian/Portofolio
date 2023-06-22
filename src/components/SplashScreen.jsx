@@ -28,8 +28,13 @@ const SplashScreen = () => {
             animate='visible'
             exit='hidden'
             variants={splashScreenVariants}>
-            <h1>Memek</h1>
-            <p>basah basah basah</p>
+            <h1>Welcome</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              natus aut quas laboriosam commodi, aperiam, dignissimos enim iure
+              unde animi quasi optio, voluptatibus obcaecati! Est ipsam illo
+              voluptas corrupti ut.
+            </p>
           </motion.div>
         ) : (
           <Hero setIsVisible={setIsVisible} />
