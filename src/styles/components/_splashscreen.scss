@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #fff;
+  background-color: $white;
 
   &.visible {
     opacity: 1;
@@ -24,6 +24,8 @@
   }
 
   p {
+    width: 80%;
+    text-align: center;
     color: #ccc;
     animation: slide-up 1s ease-in-out;
   }

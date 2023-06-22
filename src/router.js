@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // Import Pages
 import SplashScreen from './components/SplashScreen';
 import About from './pages/about/About';
-import Home from './pages/home/Index';
+import Home from './pages/home/Home';
 import Project from './pages/projects/Projects';
 
 const RoutesList = () => {

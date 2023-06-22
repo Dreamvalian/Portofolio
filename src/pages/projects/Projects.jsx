@@ -6,7 +6,7 @@ const Projects = () => {
   const pageVariants = {
     initial: {
       opacity: 0,
-      x: '-100%',
+      x: '100%',
     },
     animate: {
       opacity: 1,
@@ -14,7 +14,7 @@ const Projects = () => {
     },
     exit: {
       opacity: 0,
-      x: '100%',
+      x: '-100%',
     },
   };
 
@@ -28,7 +28,7 @@ const Projects = () => {
     <React.Fragment>
       <Header />
       <motion.div
-        className='page-container'
+        className='projects'
         initial='initial'
         animate='animate'
         exit='exit'

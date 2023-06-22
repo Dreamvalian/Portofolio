@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import Hero from '../pages/home/Hero';
+import Hero from '../pages/home/Home';
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);

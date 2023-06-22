@@ -28,14 +28,14 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <a href='/' onClick={handleDownload} className='nav-item'>
-            resume
-          </a>
-        </li>
-        <li>
           <Link to='/about' className='nav-item'>
             about
           </Link>
+        </li>
+        <li>
+          <a href='/' onClick={handleDownload} className='nav-item'>
+            resume
+          </a>
         </li>
         <a
           href='https://www.instagram.com/hanifnnugraha_/'
