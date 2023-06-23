@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import * as Icon from 'react-feather';
+import ImageGallery from 'react-image-gallery';
 import { Link } from 'react-router-dom';
 import MyImage from '../../assets/image1.jpeg';
 import Header from '../../components/Header';
@@ -10,6 +11,28 @@ const Hero = () => {
   const [email, setEmail] = useState('');
   const [icon, setIcon] = useState(<Icon.ArrowRightCircle strokeWidth={1} />);
   const [isSliderVisible, setIsSliderVisible] = useState(true);
+
+  const images = [
+    {
+      original: 'https://picsum.photos/id/1018/1000/600/',
+    },
+    {
+      original: 'https://picsum.photos/id/1015/1000/600/',
+    },
+    {
+      original: 'https://picsum.photos/id/1019/1000/600/',
+    },
+  ];
+
+  const galleryOptions = {
+    showThumbnails: false,
+    showFullscreenButton: false,
+    showPlayButton: false,
+    lazyLoad: true,
+    autoPlay: true,
+    showNav: false,
+    slideInterval: 2000,
+  };
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -129,7 +152,11 @@ const Hero = () => {
           initial={{ opacity: 0, x: '-32%' }}
           animate={{ opacity: 1, x: '0%' }}
           exit={{ opacity: 0, x: '32%' }}>
-          Image Slider [WIP]
+          <ImageGallery
+            className='image-slider'
+            items={images}
+            {...galleryOptions}
+          />
         </motion.div>
       )}
     </div>
