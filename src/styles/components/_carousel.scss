@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import '../main';
 
 
 body {
-  background-color: #512438;
+  background-color: $color-typography-white;
   margin: 0;
   font: 100% $font-stack-body;
-  background-color: $white;
-  color: $black;
+  color: $color-typography-default;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,7 +29,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  background-color: $white;
+  background-color: $color-typography-white;
   flex-shrink: 0;
   position: absolute;
   z-index: 0;
@@ -71,7 +68,7 @@ body {
     line-height: 45px;
     letter-spacing: 3px;
     font-weight: 700;
-    color: $primary-color;
+    color: $color-primary-500-default;
     transform: translateY(25%);
     opacity: 0;
     visibility: hidden;
@@ -86,14 +83,14 @@ body {
     margin-top: 35px;
     font-family: $font-stack-body;
     font-size: 16px;
-    color: $black;
+    color: $color-typography-default;
     line-height: 30px;
     margin-bottom: 35px;
   }
 
   &__btn {
     width: 35%;
-    color: $secondary-color;
+    color: $color-primary-500-default;
     font-family: $font-stack-body;
     letter-spacing: 3px;
     font-size: 11px;
@@ -113,7 +110,7 @@ body {
   position: absolute;
   right: 0;
   z-index: 2;
-  background-color: $white;
+  background-color: $color-typography-white;
   bottom: 0;
 }
 
@@ -121,7 +118,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 16px;
-  color: $white;
+  color: $color-typography-white;
 }
 
 .carousel__arrow {
@@ -129,14 +126,14 @@ body {
   display: inline-block;
   padding: 11px 15px;
   position: relative;
-  background: $primary-color;
+  background: $color-primary-500-default;
 
   &:nth-child(1):after {
     content: '';
     right: -3px;
     position: absolute;
     width: 1px;
-    background-color: $grey;
+    background-color: $color-gray-500;
     height: 14px;
     top: 50%;
     margin-top: -7px;
