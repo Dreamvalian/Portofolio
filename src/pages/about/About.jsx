@@ -32,11 +32,7 @@ const About = () => {
         exit='exit'
         variants={pageVariants}
         transition={pageTransition}>
-        <h1>About Page</h1>
-        <p>
-          Welcome to the About page. Here you can learn more about our company
-          and team.
-        </p>
+        Test
       </motion.div>
     </React.Fragment>
   );

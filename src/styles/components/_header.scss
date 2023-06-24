@@ -27,7 +27,7 @@ nav {
     li {
       display: inline-flex;
       flex-wrap: wrap;
-      margin: 0 10px;
+      margin: 0 1rem;
     }
   }
 
@@ -42,7 +42,7 @@ nav {
     color: $black;
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: $padding-small;
     transition: color 0.2s ease-out;
 
     &:active,

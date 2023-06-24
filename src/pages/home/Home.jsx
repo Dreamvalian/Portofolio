@@ -4,6 +4,7 @@ import * as Icon from 'react-feather';
 import ImageGallery from 'react-image-gallery';
 import { Link } from 'react-router-dom';
 import MyImage from '../../assets/image1.jpeg';
+import Carousel from '../../components/Carousel';
 import Header from '../../components/Header';
 
 const Hero = () => {

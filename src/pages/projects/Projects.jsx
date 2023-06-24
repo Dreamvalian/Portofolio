@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import Carousel from '../../components/Carousel';
 import Header from '../../components/Header';
 
 const Projects = () => {
@@ -34,11 +35,7 @@ const Projects = () => {
         exit='exit'
         variants={pageVariants}
         transition={pageTransition}>
-        <h1>Project Page</h1>
-        <p>
-          Welcome to the About page. Here you can learn more about our company
-          and team.
-        </p>
+        <Carousel className='project-carousel' />
       </motion.div>
     </React.Fragment>
   );
