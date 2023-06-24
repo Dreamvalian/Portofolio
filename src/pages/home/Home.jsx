@@ -56,6 +56,13 @@ const Hero = () => {
     console.log(email);
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/pages/resume/Resume-Hanif-Nugraha.pdf';
+    link.download = 'Resume-Hanif-Nugraha.pdf';
+    link.click();
+  };
+
   const renderLeftHeroContent = () => (
     <div className={`left-hero ${isOpen ? 'open' : ''}`} id='left-hero'>
       <motion.div
@@ -89,8 +96,11 @@ const Hero = () => {
         initial={{ opacity: 0, x: '100%' }}
         animate={{ opacity: 1, x: '0%' }}
         exit={{ opacity: 0, x: '-100%' }}>
-        Check out <Link to='#'>about me</Link> or see my{' '}
-        <Link to='#'>resume</Link> here.
+        Check out <Link to='/about'>about me</Link> or see my{' '}
+        <a a href='/' onClick={handleDownload}>
+          resume
+        </a>{' '}
+        here.
       </motion.p>
     </div>
   );
